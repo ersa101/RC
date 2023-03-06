@@ -1,6 +1,6 @@
 
 <p align="center"><a href="https://www.sarthakj.me/WeddingEvite/"><img src="./assets/wedding.gif" width="150px" height="150px"/></a></p>
-<h1 align="center"><a href="https://saharshisha.netlify.app/assets/SI.pdf">Wedding Invitation</a> :ring: <br> <br> SAVE THE DATE: 14th Feb, 2021 <br> <a href="https://saharshisha.netlify.app/">Website</a></h1>
+<h1 align="center"><a href="https://saharshisha.netlify.app/assets/SI.pdf">Wedding Invitation</a> :ring: <br> <br> SAVE THE DATE: 22nd April, 2023 <br> <a href="https://saharshisha.netlify.app/">Website</a></h1>
 
 
 
@@ -11,7 +11,7 @@
   <a href="https://saharshisha.netlify.app/"><img src="./assets/img/InviteMain.png" /></a>
 </details>
 
-With the divine grace of the almighty, inviting you and your family to Saharsh's wedding to be held on **14th February at [Mishtten Resort](https://g.page/Mishttenresort),  Jhalawar, Rajasthan from 3:00 PM** onwards.
+With the divine grace of the almighty, inviting you and your family to RuSh's Engagement to be held on ** 22nd April in Meerut from 1900** onwards.
 
 - [Download](https://saharshisha.netlify.app/assets/SI.pdf) the Invitation card
 
@@ -22,13 +22,13 @@ With the divine grace of the almighty, inviting you and your family to Saharsh's
 
 ```js
 
-const newCouple = 'Saharsh & Isha';
+const newCouple = 'Rupali & Shreyas;
 
 // Feb 14, 2021
-const weddingDate = new Date(2021, 02, 14);
+const weddingDate = new Date(2021, 04, 22);
 
 // Wedding venue: https://g.page/Mishttenresort
-const weddingVenue = new Location('Mishtten Resort, Rajasthan');
+const weddingVenue = new Location('Meerut, UP');
 
 (function() {
     newCouple.willTieKnot(weddingDate);
@@ -47,7 +47,7 @@ const weddingVenue = new Location('Mishtten Resort, Rajasthan');
 ### Do not forget to leave a star! :hugs:
 
 <br><sup><i>With warm regards,<br>
-**Sarthak Jain**<i></sup><br>
+**RuSh**<i></sup><br>
 
 ## Credits for the Project 
 
