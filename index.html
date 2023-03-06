@@ -51,41 +51,32 @@
          </div>
       </div>
 
-      <div id="time">
-
-         <link rel="stylesheet" href="css/simplyCountdown.theme.default.css"/>
-            <script src="dist/simplyCountdown.min.js">
-               simplyCountdown('[CSS-SELECTOR]', {
-               year: 2023, // required
-               month: 4, // required
-               day: 22, // required
-               hours: 19, // Default is 0 [0-23] integer
-               minutes: 0, // Default is 0 [0-59] integer
-               seconds: 0, // Default is 0 [0-59] integer
-               words: { //words displayed into the countdown
-                   days: { singular: 'day', plural: 'days' },
-                   hours: { singular: 'hour', plural: 'hours' },
-                   minutes: { singular: 'minute', plural: 'minutes' },
-                   seconds: { singular: 'second', plural: 'seconds' }
-               },
-               plural: true, //use plurals
-               inline: false, //set to true to get an inline basic countdown like : 24 days, 4 hours, 2 minutes, 5 seconds
-               inlineClass: 'simply-countdown-inline', //inline css span class in case of inline = true
-               // in case of inline set to false
-               enableUtc: false,
-               onEnd: function () {
-                   // your code
-                   return;
-               },
-               refresh: 1000, //default refresh every 1s
-               sectionClass: 'simply-section', //section css class
-               amountClass: 'simply-amount', // amount css class
-               wordClass: 'simply-word', // word css class
-               zeroPad: false,
-               countUp: false, // enable count up if set to true
-                });
-            </script>
-      </div>
+ 
+      <link rel="stylesheet" type="text/css" href="timer.css">
+         <div class="display">
+            <div id="clock" class="clock">
+               <h1 class="event_title">Live Event Starts in</h1>
+               <div id="numbers">
+                  <span class="days"></span>
+                  <span class="hours"></span>
+                  <span class="minutes"></span>
+                  <span class="seconds"></span>
+               </div>
+               <div id="units">
+                  <span>Days</span>
+                  <span>Hours</span>
+                  <span>Minutes</span>
+                  <span>Seconds</span>
+               </div>
+            </div>
+            <div id="door" class="hide">
+               <h1 class="event_title">Event Is Live</h1>
+               <p class="action_caption">Click the button below to enter Live Stream</p>
+<!--                <button class="call_to_action_button" type="button" onclick="liveStream()">Enter Live Stream!</button> -->
+            </div>
+<!--             <div class="author">Created by Katherine Adjahoe</div> -->
+         </div>
+         <script src="timer.js"></script>
 
       <p class="dance-med">
          dinner & dancing to follow
