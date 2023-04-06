@@ -28,6 +28,22 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
    </head>
+   
+   <body>
+	<audio id="myAudio" src="https://raw.githubusercontent.com/ersa101/RC/main/apnabanale.mp3"></audio>
+	<button onclick="playPause()">Play/Pause</button>
+	<script>
+		var audio = document.getElementById("myAudio");
+		function playPause() {
+			if (audio.paused) {
+				audio.play();
+			} else {
+				audio.pause();
+			}
+		}
+	</script>
+   </body>
+   
    <body>
       <!-- partial:index.partial.html -->
       <div class="sakura-falling"></div>
