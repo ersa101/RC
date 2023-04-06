@@ -29,20 +29,30 @@
       
    </head>
    
-   <body>
-	<audio id="myAudio" src="https://raw.githubusercontent.com/ersa101/RC/main/apnabanale.mp3"></audio>
-	<button onclick="playPause()">Play/Pause</button>
-	<script>
-		var audio = document.getElementById("myAudio");
-		function playPause() {
-			if (audio.paused) {
-				audio.play();
-			} else {
-				audio.pause();
-			}
-		}
-	</script>
-   </body>
+	<head>
+		<title>Play/Pause Audio on Tap</title>
+		<script>
+			var audio = new Audio('fhttps://raw.githubusercontent.com/ersa101/RC/main/apnabanale.mp3');
+			audio.loop = true;
+			audio.play();
+
+			document.addEventListener('visibilitychange', function() {
+				if (document.visibilityState === 'hidden') {
+					audio.pause();
+				} else {
+					audio.play();
+				}
+			});
+
+			document.addEventListener('touchstart', function() {
+				if (audio.paused) {
+					audio.play();
+				} else {
+					audio.pause();
+				}
+			});
+		</script>
+	</head>
    
    <body>
       <!-- partial:index.partial.html -->
@@ -204,7 +214,6 @@
     <div class="venue"><b> Read Again </b></div>
   </a>
 </div> -->
-<br>
 Crafted by Shreyas with lots of ❤️ for Rupali
 
 </body>
